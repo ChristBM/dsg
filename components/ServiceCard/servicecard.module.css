@@ -1,0 +1,113 @@
+.container {
+  display: grid;
+  width: 310px;
+  height: 150px;
+  padding-inline: 20px;
+  border-radius: 5px;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+  background-image: url('/endless-constellation.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 200ms ease-out;
+}
+
+.container:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease-in;
+}
+
+.img_cont {
+  display: flex;
+  width: 110px;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+}
+
+.texts_cont {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: calc(1.6rem * 1.6);
+  color: #030303;
+}
+
+.texts_cont_btt {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: calc(1.4rem * 1.6);
+  color: #030303;
+}
+
+.price {
+  display: block;
+  text-decoration: underline #ffe619;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: calc(1.6rem * 1.6);
+  color: #030303;
+}
+
+@media screen and (min-width: 1050px) {
+
+  .container {
+    display: grid;
+    width: 450px;
+    height: 250px;
+    padding-inline: 20px;
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+
+  }
+
+  .img_cont {
+    width: 180px;
+  }
+
+  .texts_cont {
+    width: 100%;
+    gap: 50px;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.6);
+  }
+
+  .texts_cont_btt {
+    justify-content: space-around;
+  }
+
+  .time {
+    font-size: 1.6rem;
+    line-height: calc(1.6rem * 1.6);
+  }
+
+  .price {
+    font-size: 1.8rem;
+    line-height: calc(1.8rem * 1.6);
+  }
+
+}
